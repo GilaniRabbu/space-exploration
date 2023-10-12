@@ -1,8 +1,22 @@
-body {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
     color: #A6B1E1;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
+}
+
+.flow > * + * {
+    margin-top: 30px;
 }
 
 #hero {
@@ -21,6 +35,7 @@ body {
 }
 
 .btn {
+    cursor: pointer;
     padding: 6px 12px;
     color: #424874;
     background: #F4EEFF;
@@ -41,6 +56,7 @@ body {
 
 .sub__text {
     color: #424874;
+    margin-top: 25px;
 }
 
 .icon a {
